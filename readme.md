@@ -56,6 +56,11 @@ See `requirements.txt`. Main tools:
 - streamlit, matplotlib, seaborn
 - dvc, mlflow
 
+
+## Example
+![Alt text for your image](images/result.png)
+
+
 ## Usage
 
 - View sentiment distribution and trends for your reviews
@@ -69,4 +74,4 @@ MIT
 
 ## Author
 
-Your Name ([Anubhav Mandarwal](https://github.com/VrityaCodeRishi))
+Anubhav Mandarwal ([Anubhav Mandarwal](https://github.com/VrityaCodeRishi))
