@@ -1,0 +1,15 @@
+data/*
+__pycache__/
+*.pyc
+.venv/*
+env/git remote add origin
+venv/
+*.egg-info/
+/.dvc/cache/
+results/*
+outputs/*
+mlruns/*
+*.pt
+*.h5
+*.ckpt
+.DS_Store
