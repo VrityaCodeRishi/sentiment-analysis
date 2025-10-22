@@ -1,4 +1,54 @@
 
+# Introduction
+
+Sentiment Analysis with DistilBERT
+This project leverages DistilBERT, a lightweight Transformer-based model, to deliver state-of-the-art sentiment analysis on customer reviews.
+
+Why DistilBERT?
+Efficiency: DistilBERT is a distilled version of BERT, retaining 97% of its language understanding power while being 60% faster and 40% smaller—making it ideal for real-time applications, dashboards, or serving APIs.
+
+Transfer Learning: Pretrained on massive corpora, DistilBERT can be fine-tuned to classify sentiment with high accuracy, even on smaller datasets.
+
+How It Works in This Project
+## 1. Data Preprocessing
+
+Raw review text is cleaned, lowercased, and stripped of punctuation.
+
+Ratings are mapped to sentiment labels:
+
+Positive (rating > 3)
+
+Neutral (rating = 3)
+
+Negative (rating < 3)
+
+## 2. Model Fine-tuning
+
+The preprocessed data is split into training and test sets.
+
+DistilBERT (via HuggingFace’s transformers library) is loaded with DistilBertForSequenceClassification.
+
+The model is fine-tuned to predict sentiment (positive/neutral/negative) based on review text.
+
+## 3. Tokenization
+
+Each review is tokenized using the pretrained DistilBERT tokenizer, converting text to sub-word tokens and numerical IDs suitable for the model.
+
+## 4. Training and Evaluation
+
+The model learns to associate patterns in text with sentiment classes.
+
+Experiment tracking is enabled with MLflow, and repeatable pipelines are managed using DVC.
+
+## 5. Inference (Prediction)
+
+For new or user-entered reviews, DistilBERT processes the input text and outputs predicted sentiment in real time.
+
+The [CLS] token’s output is used as the overall sentence representation for classification.
+
+Results are displayed instantly on the Streamlit dashboard or can be batch-evaluated for reporting.
+
+
 ## Setup
 
 1. **Clone the repo and create a virtual environment**
