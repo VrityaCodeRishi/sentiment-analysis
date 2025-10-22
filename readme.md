@@ -9,7 +9,7 @@ Efficiency: DistilBERT is a distilled version of BERT, retaining 97% of its lang
 
 Transfer Learning: Pretrained on massive corpora, DistilBERT can be fine-tuned to classify sentiment with high accuracy, even on smaller datasets.
 
-How It Works in This Project
+# How It Works in This Project
 ## 1. Data Preprocessing
 
 Raw review text is cleaned, lowercased, and stripped of punctuation.
